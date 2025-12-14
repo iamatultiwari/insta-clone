@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bac685fd.css",
+    "main.js": "/static/js/main.0d266cba.js",
+    "static/js/592.599f76a2.chunk.js": "/static/js/592.599f76a2.chunk.js",
+    "static/media/insta_bg_img.png": "/static/media/insta_bg_img.01f1d862478e2c568df0.png",
+    "static/media/insta_logo.png": "/static/media/insta_logo.0688a5f081c24205e428.png",
+    "index.html": "/index.html",
+    "main.bac685fd.css.map": "/static/css/main.bac685fd.css.map",
+    "main.0d266cba.js.map": "/static/js/main.0d266cba.js.map",
+    "592.599f76a2.chunk.js.map": "/static/js/592.599f76a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bac685fd.css",
+    "static/js/main.0d266cba.js"
+  ]
+}

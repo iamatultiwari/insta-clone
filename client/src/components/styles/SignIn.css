@@ -1,0 +1,169 @@
+.box2{
+    padding-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+.signIn-box{
+    width: 330px;
+    margin-top: 38px;
+    /* margin: auto; */
+    box-shadow: rgba(9, 30, 66, 0.001) 0px 1px 1px, rgba(9, 30, 66, 0.23) 0px 0px 1px 1px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    margin-left: 26px;
+}
+.logo-img{
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+input::placeholder {
+  font: 11px sans-serif;
+}
+.signUp-para{
+    margin: auto;
+    font-size: 15px;
+    display: block;
+    width: 255px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(116, 114, 116);
+    padding-bottom: 30px;
+}
+.input-div-2{
+    width: 255px;
+    margin: auto; 
+    margin-top: 5px;
+}
+input{
+    outline: none;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 2.5px;
+    border-color: #DBDBDB;
+    background-color: #FAFAFA;
+    font-size: 13px;
+}
+.input-fields{
+    width: 97.5%;
+}
+.button{
+    margin: auto;
+    
+}
+.button-div{
+    width: 255px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+/* button css */
+/* CSS */
+.button-65 {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #0095F6;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 32px;
+  letter-spacing: normal;
+  line-height: 0.2;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  margin-top: 30px;
+}
+
+.button-65:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-65:hover:after {
+  opacity: .5;
+}
+
+.button-65:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(0px);
+  transition-duration: .35s;
+}
+
+.button-65:active:after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .button-65 {
+    padding: 14px 22px;
+    width: 100%;
+  }
+}
+.have-acc-2{
+    width: 330px;
+    margin-top: 10px;
+    margin: auto;
+    box-shadow: rgba(9, 30, 66, 0.001) 0px 1px 1px, rgba(9, 30, 66, 0.23) 0px 0px 1px 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 26px;
+}
+.have-acc-text-2{
+    width: 255px;
+    margin: auto;
+    text-align: center;
+    font-size: 13px;
+}
+.log-in{
+    font-weight: 500;
+    color: #007FFF;
+    cursor: pointer;
+}
+.link{
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* background imgage */
+
+.phone-img{
+  width: 360px;
+  margin-left: 360px;
+  margin-top: 15px;
+}
+.signUp-parent{
+  margin-left: 26px;
+  margin-top: 38px;
+}
+
+@media screen and (max-width: 800px){
+  .phone-img-div{
+    display: none;
+  }
+}
