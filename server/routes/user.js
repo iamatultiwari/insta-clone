@@ -70,6 +70,21 @@ router.put("/uploadProfilePic", requireLogin, (req, res)=>{
     .then((result)=>{ res.json(result)})
     .catch((err)=> { return res.status(422).json({error: err})})
 })
+// Search users by name or username
+router.post("/search-users", requireLogin, (req, res) => {
+    const { query } = req.body
+    if (!query) return res.json({ users: [] })
+
+    USER.find({
+        $or: [
+            { name: { $regex: query, $options: "i" } },
+            { userName: { $regex: query, $options: "i" } }
+        ]
+    }).select("_id name userName Photo")
+    .then(users => res.json({ users }))
+    .catch(err => res.status(422).json({ error: err }))
+})
+
 
 
 module.exports = router

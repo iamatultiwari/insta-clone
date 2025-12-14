@@ -1,42 +1,114 @@
+/* General img styling */
 img{
-    /* width: 10%; */
     object-fit: contain;
-    align-items: left;
     max-width: 93%;
     cursor: pointer;
 }
+
+/* Logo */
 .logo-div{
     padding-top: 18px;
     width: 10%;
-    object-fit: contain;
 }
 
 .logo-img{
-    /* width: 10%; */
-}
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 1px 5px 5px #e0dcdc;
-    height: 70px;
+    max-height: 50px;
 }
 
+/* Navbar container */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 1px 5px 5px #e0dcdc;
+    height: 70px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Left items + search box container */
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+/* Nav links */
 ul{
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 li{
     list-style: none;
     padding: 1px 20px;
+    cursor: pointer;
 }
 
-a{   /* a tag works for Link */
+a{
     text-decoration: none;
     color: black;
     font-size: 17px;
 }
 
+/* Search box */
+.search-box{
+    position: relative;
+    margin-left: 20px;
+}
+
+.search-box input{
+    padding: 6px 12px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 200px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus{
+    width: 250px;
+    border-color: #db183c;
+}
+
+/* Search results dropdown */
+.search-dropdown{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 200;
+}
+
+.search-item{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.search-item:hover{
+    background: #f2f2f2;
+}
+
+.search-item img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Primary button */
 .primaryBtn{
     cursor: pointer;
     font-weight: bolder;
@@ -55,11 +127,7 @@ a{   /* a tag works for Link */
     box-shadow: 0 10px 20px -10px rgba(219, 24, 44, 0.6);
 }
 
-.nav-items{
-    height: 50px;
-}
-
-
+/* Responsive mobile navbar */
 .nav-mobile{
     display: none;
 }
@@ -84,4 +152,3 @@ a{   /* a tag works for Link */
         padding: 10px 0px;
     }
 }
-
