@@ -1,156 +1,199 @@
-.card{
-    max-width: 500px;
-    height: auto;
-    margin: 25px auto;
-    border-bottom: 1px solid rgb(219,219,219);
+/* FEED CARD */
+.card {
+  max-width: 470px;
+  margin: 25px auto;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid rgb(219, 219, 219);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  overflow: hidden;
 }
 
-.card-header{
-    display: flex;
+/* HEADER */
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
 }
 
-.card-header > h5{
-    margin: 0;
-    padding: 11px;
+.card-header h5 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.card-pic img{
-    width: 30px;
-    border-radius: 30px;
-    height: auto;
-    object-fit: contain;
-    padding: 5px;
+/* Profile pic */
+.card-pic img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 1px solid #eee;
 }
 
-.card-image{
-    max-width: 500px;
-}
-.card-image img{
-    max-width: 99.7%;
-    height: auto;
-    border-radius: 3px;
-    border: 1px solid rgb(219,219,219);
+/* IMAGE */
+.card-image {
+  width: 100%;
+  background-color: #000;
 }
 
-.card-content{
-    text-align: left;
-    line-height: 4px;
-    font-size: 15px;
-    padding: 3px;
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.body-name{
-    font-weight: 550;
-    font-size: 14px;
+/* CONTENT */
+.card-content {
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 14px;
 }
 
-.likes{
-    font-weight: 500;
-    margin-bottom: 25px;
+.body-name {
+  font-weight: 600;
+  margin-right: 6px;
 }
 
-.body-text{
-    font-size: 14px;
+.body-text {
+  line-height: 1.4;
+  margin-top: 4px;
 }
 
-.add-comment{
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+/*LIKE SECTION */
+.likes {
+  font-weight: 500;
+  font-size: 13px;
+  margin: 8px 0;
 }
 
-.add-comment input{
-    margin: 0;
-    outline: none;
-    border: none;
-    padding: 3px;
-    width: 100%;
-    background-color: white;
+/*  ICONS */
+.material-symbols-outlined {
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.2s;
 }
 
-.comment{
-    border: none;
-    background-color: white;
-    font-weight: bolder;
-    cursor: pointer;
-    color: #339ce3;
+.material-symbols-outlined:hover {
+  transform: scale(1.1);
 }
 
 .material-symbols-outlined-red {
-    color: red;
-    font-variation-settings:
+  color: red;
+  font-variation-settings:
     'FILL' 1,
     'wght' 700,
     'GRAD' 0,
-    'opsz' 48
-  }
-  
-  .material-symbols-outlined{
-      cursor: pointer;
+    'opsz' 48;
+}
+
+/*  COMMENT INPUT */
+.add-comment {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgb(239,239,239);
+  padding: 8px 12px;
+}
+
+.add-comment input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  background: transparent;
+}
+
+.comment {
+  border: none;
+  background: none;
+  font-weight: 600;
+  color: #0095f6;
+  cursor: pointer;
+}
+
+/*  COMMENT MODAL */
+.showComment {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  height: 500px;
+  background: white;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Post image */
+.postPic {
+  width: 55%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postPic img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Details section */
+.details {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+/* Comments */
+.comment-section {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+/* Close button */
+.close-comment {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.material-symbols-outlined-comment {
+  font-size: 42px;
+}
+
+/*  MOBILE */
+@media screen and (max-width: 768px) {
+  .card {
+    border-radius: 0;
+    margin: 0 auto 20px auto;
   }
 
-  /* show comment modal opening */
-
-  .showComment{
-    width: 100vw;
-    min-height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(16, 13, 13, 0.4)
-  }
-
-  .container{
-    display: flex;
-    width: 80%;
-    background-color: white;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    height: 500px;
-  }
-
-  .postPic{
-    background-color: black;
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    overflow: hidden;
-  }
-
-  .postPic img{
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  .details{
-    width: 100%;
-    height: inherit;
-    display: flex;
+  .container {
     flex-direction: column;
+    width: 95%;
+    height: 90%;
   }
 
-  .comment-section{
-    flex-grow: 4;
-    text-align: left;
-    margin-left: 10px;
+  .postPic,
+  .details {
+    width: 100%;
   }
-
-  .close-comment{
-    position: fixed;
-    top: 1%;
-    right: 5%;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-
-  .material-symbols-outlined-comment {
-    font-size: 50px;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 600,
-  'GRAD' 0,
-  'opsz' 48
 }

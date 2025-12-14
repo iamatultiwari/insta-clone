@@ -1,0 +1,38 @@
+.insta-footer {
+  margin-top: 40px;
+  padding: 20px 10px;
+  text-align: center;
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .footer-links {
+    gap: 8px;
+  }
+}

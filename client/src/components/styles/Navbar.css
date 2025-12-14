@@ -129,26 +129,34 @@ a{
 
 /* Responsive mobile navbar */
 .nav-mobile{
-    display: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    border-top: 1px solid #dbdbdb;
+    padding: 10px 0;
+    z-index: 999;
 }
 
+.nav-mobile li{
+    list-style: none;
+}
+
+.nav-mobile span{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/*  Mobile  */
 @media screen and (max-width: 800px){
     .logo-img{
         display: none;
     }
     .navbar{
         display: none;
-    }
-    .nav-mobile{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background-color: #fff;
-        box-shadow: 0px -2px 5px #fff;
-        margin: 0;
-        padding: 10px 0px;
     }
 }
